@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    // Declaration and initialization of a 2D array
+    int scores[2][2] = {
+        {85, 90},  // Row 1 values
+        {75, 80}   // Row 2 values
+    };
+
+    // Printing the elements of the 2D array using a nested loop
+    printf("Elements of the scores array:\n");
+    for (int i = 0; i < 2; i++) {           // Loop through rows
+        for (int j = 0; j < 2; j++) {       // Loop through columns
+            printf("%d ", scores[i][j]);    // Print each element
+        }
+        printf("\n"); // Newline after each row
+    }
+
+    return 0;
+}
